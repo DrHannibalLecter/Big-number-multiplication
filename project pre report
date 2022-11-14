@@ -1,0 +1,17 @@
+	I will use LinkedLists for multiplicand, multiplier and result. Result's LinkedList is stack. Multiplier's LinkedList has add operation that can only be added to the end and has a pointer in every cell which points to previous cell. Multiplicand's LinkedList has add operation that can only be added to the end and has 2 pointers in every cells which points previos and next cell. Since a cell can only store one digit, I can use bit fields to reduce memory space. I will need 2 pointers that shows a cell in multiplier and another 2 for multiplicand. I will need a unsigned long for carry.
+	
+	Calculation algorithm multiplies appropriate numbers and sums them then adds carry to find digit in result. Then adds that digit to result's LinkedList, calculates carry and does all this for other digits. Its complexity for n-digit number and t-digit number O(n*t)
+	
+	When we know result's most left digit and base system and result's number of digits we also know its decimal value's number of digits. Assume that result's most left digit as x, base system as k and result's number of digits as y. Decimal value's number of digits becomes (round down(log(x*k**(y-1)))+1). Since I know decimal value's number of digits, I can create an array of structs and a loop to convert to number. Array contains digits so I use structs to use bit fields. Assume that t is the appropriate digit of result. Loop turns y times and on nth turn adds (t*k**n) to number which stored in array.
+	
+	I choose carry as unsigned long because algorithm has to calculate very large numbers. Its max value can be (L*(k-1)-1)<= (2**64) base system is k and L is multiplier's number of digits.
+	 
+	Assume that numbers are 543 and 21 in 6 base system. 2 pointers  from both numbers' most right digit. 1*3 and then tries to multiply on 1's left digit and 3's right digit until it can. However no digits on 3's right so algorithm adds carry and finds remainder of that numbers from 6. Result's first digit(right to left) becomes 3%6=3 and carry becomes 3/6=0. After algorithm finds a digit, one of the pointers points on 3's left. Then same process happens 1*4+2*3+carry=10. next digit of result becomes 10%6=4 and carry becomes 10/6=1. It does these calculations until both numbers' most left digit multiplies. At the end of calculation, if there is a carry, adds it to result as final digit.
+	
+	(1*3+carry)%6=3 	most right digit
+	(1*4+2*3+carry)%6=4
+	(1*5+2*4+carry)%6=2
+	(2*5+carry)%6=0
+	carry=2			most left digit
+	
+	543*21=20243 in base 6 system
