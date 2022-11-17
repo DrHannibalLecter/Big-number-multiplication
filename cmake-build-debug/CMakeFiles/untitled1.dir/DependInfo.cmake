@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pc/Desktop/integer-multiplication-master/main.c" "CMakeFiles/untitled1.dir/main.c.o" "gcc" "CMakeFiles/untitled1.dir/main.c.o.d"
+  "/home/pc/Desktop/Big-number-multiplication/main.c" "CMakeFiles/untitled1.dir/main.c.o" "gcc" "CMakeFiles/untitled1.dir/main.c.o.d"
   )
 
 # Targets to which this target links.

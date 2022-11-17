@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/pc/Desktop/integer-multiplication-master/cmake-build-debug"
+			"value" : "/home/pc/Desktop/Big-number-multiplication/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/pc/Desktop/integer-multiplication-master"
+			"value" : "/home/pc/Desktop/Big-number-multiplication"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/pc/Desktop/integer-multiplication-master/cmake-build-debug"
+			"value" : "/home/pc/Desktop/Big-number-multiplication/cmake-build-debug"
 		},
 		{
 			"name" : "untitled1_IS_TOP_LEVEL",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/pc/Desktop/integer-multiplication-master"
+			"value" : "/home/pc/Desktop/Big-number-multiplication"
 		}
 	],
 	"kind" : "cache",

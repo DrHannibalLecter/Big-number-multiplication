@@ -415,8 +415,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/pc/Desktop/integer-multiplication-master/cmake-build-debug",
-		"source" : "/home/pc/Desktop/integer-multiplication-master"
+		"build" : "/home/pc/Desktop/Big-number-multiplication/cmake-build-debug",
+		"source" : "/home/pc/Desktop/Big-number-multiplication"
 	},
 	"version" : 
 	{
